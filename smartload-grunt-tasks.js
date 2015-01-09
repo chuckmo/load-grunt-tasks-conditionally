@@ -1,4 +1,5 @@
 'use strict';
+
 var path = require('path');
 var findup = require('findup-sync');
 var multimatch = require('multimatch');
@@ -40,7 +41,7 @@ module.exports = function (grunt, options) {
 	if(dir){
 		glob.glob(dirPattern, {sync: true, cwd: dir}, function(err, matches){
 			dirNames = matches;
-		})
+		});
 	}
 
 	// update patterns based on smartLoad rules
@@ -50,7 +51,7 @@ module.exports = function (grunt, options) {
 		// check current task(s) for definition
 		var hasSmartTaskDefinition = function(task){
 			return smartTasks.indexOf(task) > -1;
-		}
+		};
 
 		if (grunt.cli.tasks.every(hasSmartTaskDefinition)){
 			var newPattern = smartTasks._always || [];

@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function (grunt) {
-	require('./load-grunt-tasks')(grunt, {
+	require('./smartload-grunt-tasks')(grunt, {
 		pattern: ['*'],
 		config: require('./package'),
 		scope: 'devDependencies'
