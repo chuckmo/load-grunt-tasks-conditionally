@@ -9,7 +9,8 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		svgmin: {
 			noop: {}
-		}
+		},
+		release: {}
 	});
 
 	grunt.registerTask('default', ['svgmin']);

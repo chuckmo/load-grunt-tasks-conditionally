@@ -81,25 +81,25 @@ module.exports = function (grunt) {
 ### Load all grunt tasks
 
 ```js
-require('load-grunt-tasks')(grunt);
+require('smartload-grunt-tasks')(grunt);
 ```
 
 Equivalent to:
 
 ```js
-require('load-grunt-tasks')(grunt, {pkgPattern: 'grunt-*'});
+require('smartload-grunt-tasks')(grunt, {pkgPattern: 'grunt-*'});
 ```
 
 ### Load all grunt-contrib tasks
 
 ```js
-require('load-grunt-tasks')(grunt, {pkgPattern: 'grunt-contrib-*'});
+require('smartload-grunt-tasks')(grunt, {pkgPattern: 'grunt-contrib-*'});
 ```
 
 ### Load all grunt-contrib tasks, another non-contrib task, and every .js file in the `grunt_tasks` directory:
 
 ```js
-require('load-grunt-tasks')(grunt, {
+require('smartload-grunt-tasks')(grunt, {
 	pkgPattern: ['grunt-contrib-*', 'grunt-shell'],
 	dir: 'grunt_tasks'
 });
@@ -110,19 +110,19 @@ require('load-grunt-tasks')(grunt, {
 You can exclude tasks using the negate `!` globbing pattern:
 
 ```js
-require('load-grunt-tasks')(grunt, {pkgPattern: ['grunt-contrib-*', '!grunt-contrib-coffee']});
+require('smartload-grunt-tasks')(grunt, {pkgPattern: ['grunt-contrib-*', '!grunt-contrib-coffee']});
 ```
 
 ### Set custom path to package.json
 
 ```js
-require('load-grunt-tasks')(grunt, {pkgConfig: '../package'});
+require('smartload-grunt-tasks')(grunt, {pkgConfig: '../package'});
 ```
 
 ### Only load from `devDependencies` and when running the `grunt` task, only load `grunt-contrib-sass` task:
 
 ```js
-require('load-grunt-tasks')(grunt, {
+require('smartload-grunt-tasks')(grunt, {
 	pkgScope: 'devDependencies',
 	smartLoad: {
 		'sass': ['grunt-contrib-sass']
@@ -133,7 +133,7 @@ require('load-grunt-tasks')(grunt, {
 ### Only load from `devDependencies` and `dependencies`
 
 ```js
-require('load-grunt-tasks')(grunt, {pkgScope: ['devDependencies', 'dependencies']});
+require('smartload-grunt-tasks')(grunt, {pkgScope: ['devDependencies', 'dependencies']});
 ```
 
 ### All options in use
