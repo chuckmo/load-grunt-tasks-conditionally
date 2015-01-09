@@ -1,6 +1,6 @@
 {
   "name": "smartload-grunt-tasks",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Load multiple grunt tasks dynamically using globbing patterns. Load only the tasks you need based on the current task being run.",
   "keywords": [
     "grunt",
