@@ -139,7 +139,7 @@ require('load-grunt-tasks')(grunt, {pkgScope: ['devDependencies', 'dependencies'
 ### All options in use
 
 ```js
-require('load-grunt-tasks')(grunt, {
+require('smartload-grunt-tasks')(grunt, {
 	pkgPattern: 'grunt-contrib-*',
 	pkgConfig: '../package.json',
 	pkgScope: 'devDependencies',
@@ -188,4 +188,4 @@ Default: `false` (load everything every time)
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT)
